@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+header,
+footer {
+  padding: 1rem 5rem;
+
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer {
+  justify-content: center;
+
+  background-color: rgb(250, 213, 168);
+}
+
+header > img,
+footer > img {
+  width: 100px;
+  height: 75px;
+}
+
+.login-button {
+  text-align: center;
+  cursor: pointer;
+  font-size: 1rem;
+
+  border-radius: 4px;
+  background-color: transparent;
+  border: 1px solid #d35400;
+  padding: 0.5rem;
+  width: 75px;
+  height: 40px;
+  transition: all 0.5s;
+}
+
+main {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.banner {
+  width: 100%;
+  height: 100%;
+
+  background-image: url("../../../assets/images/banner.png");
+}
+.banner-text {
+  padding: 1rem;
+
+  width: 50%;
+
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+}
+.banner-text > h1,
+.banner-text > p {
+  color: #fff;
+}
+.banner-text > h1 {
+  width: 60%;
+
+  font-size: 2rem;
+  font-weight: 800;
+}
+.banner-text > p {
+  width: 80%;
+
+  margin-top: 1rem;
+
+  font-weight: 600;
+}
+
+.form-modal {
+  width: 30%;
+  height: 90%;
+
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+
+  background-color: bisque;
+
+  position: absolute;
+  right: 10%;
+  top: 5%;
+  bottom: 5%;
+}
+
+.form-modal > p,
+.terms-condition > p {
+  margin-top: 0.5rem;
+
+  width: 90%;
+
+  font-size: 0.8rem;
+}
+
+.form-feilds {
+  width: 100%;
+  padding: 0.25rem;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-feilds > label {
+  width: 35%;
+}
+
+.form-feilds > input,
+.form-feilds > .dob-select,
+.form-feilds > select {
+  width: 60%;
+  height: 100%;
+}
+
+.dob-select {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dob-select > select {
+  width: 30%;
+}
+
+.form-feilds > label {
+  font-size: 0.75rem;
+}
+
+.register-button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+
+  text-align: center;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #fff;
+
+  border-radius: 4px;
+  background-color: #d35400;
+  border: none;
+  padding: 0.5rem;
+  width: 40%;
+  transition: all 0.5s;
+}
+
+.register-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.register-button span:after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.register-button:hover span {
+  padding-right: 25px;
+}
+
+.register-button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.form-feilds > input,
+.form-feilds > select,
+.dob-select > select {
+  padding: 0.2rem;
+
+  font-size: 0.7rem;
+
+  outline: none;
+
+  border: 1px solid #b18535;
+  border-radius: 5px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.terms-condition {
+  display: flex;
+  justify-content: space-between;
+}
